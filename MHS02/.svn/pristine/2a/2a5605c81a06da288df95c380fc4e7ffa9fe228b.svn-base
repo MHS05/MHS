@@ -1,0 +1,164 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ include file="../admininclude/head.jsp" %> 
+						<tr>
+							<td colspan="6">
+								<div class="dbutton" style="background-color: white; margin-top: 22px">
+									<select name="list">
+										<option value="1">½Å°í¿©ºÎ</option>
+										<option value="2">Á¶È¸¼ö</option>
+										<option value="3">ÃÖ±Ù</option>
+									</select>
+								</div>
+								<a href="userRlist.jsp"><div class="dbutton" style="margin-top: 22px">¼±ÅÃ»èÁ¦</div></a>
+								<a href="userRlist.jsp"><h2><b>È«±æµ¿ ´ÔÀÌ ÀÛ¼ºÇÑ ´ñ±Û ¸ñ·Ï</b></h2></a>
+								<hr>
+							</td>
+						</tr>
+						<tr>
+							<td align="center" width="10px">
+								<input type="checkbox" value="all">
+							</td>
+							<td align="center" width="100px">¹øÈ£</td>
+							<td align="center">´ñ±ÛÁ¦¸ñ</td>
+							<td align="center" width="75px">±Û¾´ÀÌ</td>
+							<td align="center" width="100px">ÀÛ¼ºÀÏ</td>
+							<td align="center" width="70px">½Å°í³»¿ª</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center" width="10px">
+								<input type="checkbox" value="1">
+							</td>
+							<td align="center">1</td>
+							<td align="center"><a href="view.jsp">1¹øÂ° ´ñ±Û³»¿ëÀÔ´Ï´Ù.</a></td>
+							<td align="center">È«±æµ¿</td>
+							<td align="center">2023.11.30</td>
+							<td align="center">X</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center" width="10px">
+								<input type="checkbox" value="1">
+							</td>
+							<td align="center">1</td>
+							<td align="center"><a href="view.jsp">1¹øÂ° ´ñ±Û³»¿ëÀÔ´Ï´Ù.</a></td>
+							<td align="center">È«±æµ¿</td>
+							<td align="center">2023.11.30</td>
+							<td align="center">X</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center" width="10px">
+								<input type="checkbox" value="1">
+							</td>
+							<td align="center">1</td>
+							<td align="center"><a href="view.jsp">1¹øÂ° ´ñ±Û³»¿ëÀÔ´Ï´Ù.</a></td>
+							<td align="center">È«±æµ¿</td>
+							<td align="center">2023.11.30</td>
+							<td align="center">X</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center" width="10px">
+								<input type="checkbox" value="1">
+							</td>
+							<td align="center">1</td>
+							<td align="center"><a href="view.jsp">1¹øÂ° ´ñ±Û³»¿ëÀÔ´Ï´Ù.</a></td>
+							<td align="center">È«±æµ¿</td>
+							<td align="center">2023.11.30</td>
+							<td align="center">X</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center" width="10px">
+								<input type="checkbox" value="1">
+							</td>
+							<td align="center">1</td>
+							<td align="center"><a href="view.jsp">1¹øÂ° ´ñ±Û³»¿ëÀÔ´Ï´Ù.</a></td>
+							<td align="center">È«±æµ¿</td>
+							<td align="center">2023.11.30</td>
+							<td align="center">X</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center" width="10px">
+								<input type="checkbox" value="1">
+							</td>
+							<td align="center">1</td>
+							<td align="center"><a href="view.jsp">1¹øÂ° ´ñ±Û³»¿ëÀÔ´Ï´Ù.</a></td>
+							<td align="center">È«±æµ¿</td>
+							<td align="center">2023.11.30</td>
+							<td align="center">X</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center" width="10px">
+								<input type="checkbox" value="1">
+							</td>
+							<td align="center">1</td>
+							<td align="center"><a href="view.jsp">1¹øÂ° ´ñ±Û³»¿ëÀÔ´Ï´Ù.</a></td>
+							<td align="center">È«±æµ¿</td>
+							<td align="center">2023.11.30</td>
+							<td align="center">X</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center" width="10px">
+								<input type="checkbox" value="1">
+							</td>
+							<td align="center">1</td>
+							<td align="center"><a href="view.jsp">1¹øÂ° ´ñ±Û³»¿ëÀÔ´Ï´Ù.</a></td>
+							<td align="center">È«±æµ¿</td>
+							<td align="center">2023.11.30</td>
+							<td align="center">X</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center" width="10px">
+								<input type="checkbox" value="1">
+							</td>
+							<td align="center">1</td>
+							<td align="center"><a href="view.jsp">1¹øÂ° ´ñ±Û³»¿ëÀÔ´Ï´Ù.</a></td>
+							<td align="center">È«±æµ¿</td>
+							<td align="center">2023.11.30</td>
+							<td align="center">X</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center" width="10px">
+								<input type="checkbox" value="1">
+							</td>
+							<td align="center">1</td>
+							<td align="center"><a href="view.jsp">1¹øÂ° ´ñ±Û³»¿ëÀÔ´Ï´Ù.</a></td>
+							<td align="center">È«±æµ¿</td>
+							<td align="center">2023.11.30</td>
+							<td align="center">X</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td colspan="6" align="center">¢¸ 1 2 3 4 5 6 7 8 9 10 ¢º</td>
+						</tr>
+<%@ include file="../admininclude/tail.jsp" %> 

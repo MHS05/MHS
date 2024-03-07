@@ -1,0 +1,612 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>체질검사 테스트</title>
+	</head>
+	<body>
+	<style>
+		#result
+		{
+			 border: none;
+			 width: 150px;
+			 height: 50px;
+			 background-color:#4dd5b0;
+			 border-radius: 15px;
+			 font-size:17px;
+		}
+		#reset
+		{
+			 border: none;
+			 width: 150px;
+			 height: 50px;
+			 background-color:#BEBEBE;
+			 border-radius: 15px;
+			 font-size:17px;
+		}
+		td
+		{
+			font-size:30px;
+		}
+	</style>
+		<table border="0">
+			<tr>
+				<td width="150px"></td>
+				<td valign="top"><h2><img src="../image/../image/write.jpg" style="width:50px;">체질검사</h2></td>
+			</tr>
+		</table>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>1. 당신의 체격은 다음 중 어디에 해당합니까?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="1bun" value="1"> 허리와 배가 발달되고 상체가 약한 편이다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="1bun" value="2"> 상체보다 골반, 다리 하체가 발달되었다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="1bun" value="3"> 두부(머리)와 목덜미가 발달되고 허리부분이 약하다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="1bun" value="4"> 가슴이 발달되고 허리 아래부분이 빈약한 편이다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>2. 전체적인 외모와 골격은 다음 중 어디에 해당됩니까?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="2bun" value="1"> 골격이 굵고 살이 찐 편이다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="2bun" value="2"> 골격이 작고 균형이 잡혀있다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="2bun" value="3"> 보통이며 다부진 체격이다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="2bun" value="4"> 키가 크고 몸은 수척한 편이다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>3. 당신의 몸에서 외관상 가장 발달된 부분은?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="3bun" value="1"> 허리와 옆구리</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="3bun" value="2"> 엉덩이</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="3bun" value="3"> 가슴</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="3bun" value="4"> 머리</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>4. 당신의 걸음걸이는 다음중 어디에 해당됩니까?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="4bun" value="1"> 걸음이 느리고 무게 있게 걷는다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="4bun" value="2"> 걸음걸이가 자연스럽고 얌전하다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="4bun" value="3"> 걸음이 빠르고 몸을 흔든다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="4bun" value="4"> 걸음걸이가 꼿꼿하다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>5. 당신은 다음 중 어디에 해당합니까?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="5bun" value="1"> 평소에 땀이 많고 땀을 흘리면 오히려 상쾌하다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="5bun" value="2"> 평소에 땀이 많지 않고 조금만 땀을 내도 피곤하다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="5bun" value="3"> 땀을 흘려도 그다지 피곤하지 않다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>6. 당신의 얼굴은 다음 중 어디에 가장 가깝습니까?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="6bun" value="1"> 얼굴의 윤곽이 뚜렷하고 의젓하다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="6bun" value="2"> 얼굴의 윤곽이 갸름하고 둥글다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="6bun" value="3"> 얼굴이 다소 길고 머리가 앞뒤로 나왔다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="6bun" value="4"> 머리가 크고 정수리가 솟아있다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>7. 당신 얼굴의 색깔은?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="7bun" value="1"> 갈색 혹은 검은 빛이다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="7bun" value="2"> 황색이다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="7bun" value="3"> 흰색 또는 붉은 빛이 돈다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="7bun" value="4"> 흰편이다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>8. 당신의 얼굴은 다음 중 어디에 해당되는가?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="8bun" value="1"> 이목구비가 크고 입술이 두텁다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="8bun" value="2"> 눈, 코, 입이 작고 섬세한 편이다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="8bun" value="3"> 입이 크지 않고 턱이 뾰족한 편이고 입술이 얇다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="8bun" value="4"> 이마가 넓고 광대뼈가 나와 있다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>9. 당신의 눈빛은 다음 중 어디에 가장 가까운가?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="9bun" value="1"> 눈빛이 밝지 않고 침침하다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="9bun" value="2"> 눈빛이 순하고 눈웃음을 잘 짓는다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="9bun" value="3"> 눈빛이 반사적이고 예리하다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="9bun" value="4"> 눈에서 빛이 난다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>10. 당신의 가슴은?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="10bun" value="1"> 살이 찌고 넓고 잘 발달되었다.(비만형)</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="10bun" value="2"> 빈약하고 구부정하다.(세장형)</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="10bun" value="3"> 근육이 많고 넓고 튼튼한 편이다.(근육형)</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="10bun" value="4"> 가슴이 벌어지고 견실하다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>11. 당신의 손과 발은?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="11bun" value="1"> 손발이 따뜻하나 겨울에 잘 튼다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="11bun" value="2"> 손발이 차고 겨울에 잘 트지 않는다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="11bun" value="3"> 손발이 따뜻한 편이다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>12. 당신의 피부는?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="12bun" value="1"> 두텁고 땀구멍이 크다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="12bun" value="2"> 부드럽고 땀구멍이 작다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="12bun" value="3"> 희고 마른 편이다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="12bun" value="4"> 부드럽고 마른 편이다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>13. 당신의 음성은 다음 중 어디에 해당됩니까?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="13bun" value="1"> 음성이 무겁고 부드럽다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="13bun" value="2"> 조용한 편이다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="13bun" value="3"> 카랑카랑하다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>14. 말할 때 평소 습관은?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="14bun" value="1"> 말수가 적고 간혹 더듬기도 한다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="14bun" value="2"> 말이 많지 않으나 가까운 사이와는 말을 많이 하는 편이다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="14bun" value="3"> 말이 많고 말을 먼저 하는 편이다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>15. 당신의 대변상태는 다음 중 어디에 해당되는가?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="15bun" value="1"> 변비가 자주 오는 편이다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="15bun" value="2"> 대개는 대변이 무르고 간혹 변비가 있어도 그다지 불쾌감은 없다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="15bun" value="3"> 약간의 변비만 있어도 고통스럽다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="15bun" value="4"> 대변이 부드럽고 양이 많다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>16. 평소 건강할 때 자주 느끼는 증상으로 어떠한 것이 있는가?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="16bun" value="1"> 가슴이 두근거리거나 눈이 쉽게 피로하고 아프다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="16bun" value="2"> 한숨을 잘 쉬거나 팔다리가 떨리거나 쥐가 잘 난다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="16bun" value="3"> 건망증이 있다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="16bun" value="4"> 가슴이 답답하고 막힌 듯하거나 다리에 힘이 없어 오래 걷지 못한다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>17. 평소에 잘 나타나는 병증으로 어떠한 증세가 있는가?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="17bun" value="1"> 가슴이 뛴다. 감기, 변비, 눈병, 설사, 갈증</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="17bun" value="2"> 소화이상, 신경예민, 설사, 요통, 팔다리에 힘이 없다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="17bun" value="3"> 변비, 건망증, 구역감, 코피</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="17bun" value="4"> 요통, 하지무력, 목에 이상감각</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" align="center" width="1000px">
+			<tr height="50px">
+				<td><h3>18. 음식물에 대한 당신의 기호는?</h3><td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="18bun" value="1"> 따뜻한 음식을 좋아한다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="18bun" value="2"> 뜨거운 음식을 좋아한다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="18bun" value="3"> 찬음식을 좋아한다.</td>
+			</tr>
+			<tr height="50px">
+				<td><input type="radio" name="18bun" value="4"> 시원한 음식을 좋아한다.</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<form>
+			<table border="0" width="1200px" align="center">
+				<tr>
+					<td height="70px" align="center"><img src="../image/down.jpg"></td>
+				</tr>
+				<tr>
+					<td height="50px"><h3>19번~22번은 그렇다, 보통이다, 아니다에서 골라서 표기해 주십시오.</h3></td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" align="center">
+							<tr>
+								<td align="center" width="800px" style="background-color:lightgray;">19번</td>
+								<td align="center" width="100px" style="background-color:lightgray;">그렇다</td>
+								<td align="center" width="150px" style="background-color:lightgray;">보통이다</td>
+								<td align="center" width="100px" style="background-color:lightgray;">아니다</td>
+							</tr>
+							<tr>
+								<td>1. 과묵하고 신중한 편이다.</td>
+								<td align="center"><input type="radio" name="19.1bun" value="Y"></td>
+								<td align="center"><input type="radio" name="19.1bun" value="B"></td>
+								<td align="center"><input type="radio" name="19.1bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>2. 밖의 일보다 집안일이나 개인적인 일을 더 중요시한다.</td>
+								<td align="center"><input type="radio" name="19.2bun" value="Y"></td>
+								<td align="center"><input type="radio" name="19.2bun" value="B"></td>
+								<td align="center"><input type="radio" name="19.2bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>3. 자기의 의견을 끝까지 관철시키는 편이며 고집이 세다.</td>
+								<td align="center"><input type="radio" name="19.3bun" value="Y"></td>
+								<td align="center"><input type="radio" name="19.3bun" value="B"></td>
+								<td align="center"><input type="radio" name="19.3bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>4. 인내심이 많다.</td>
+								<td align="center"><input type="radio" name="19.4bun" value="Y"></td>
+								<td align="center"><input type="radio" name="19.4bun" value="B"></td>
+								<td align="center"><input type="radio" name="19.4bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>5. 평소 점잖은 편이나 음흉한 면도 있다.</td>
+								<td align="center"><input type="radio" name="19.5bun" value="Y"></td>
+								<td align="center"><input type="radio" name="19.5bun" value="B"></td>
+								<td align="center"><input type="radio" name="19.5bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>6. 욕심이 많다.</td>
+								<td align="center"><input type="radio" name="19.6bun" value="Y"></td>
+								<td align="center"><input type="radio" name="19.6bun" value="B"></td>
+								<td align="center"><input type="radio" name="19.6bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>7. 노력형이다.</td>
+								<td align="center"><input type="radio" name="19.7bun" value="Y"></td>
+								<td align="center"><input type="radio" name="19.7bun" value="B"></td>
+								<td align="center"><input type="radio" name="19.7bun" value="N"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td height="70px"></td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" align="center">
+							<tr>
+								<td align="center" width="800px" style="background-color:lightgray;">20번</td>
+								<td align="center" width="100px" style="background-color:lightgray;">그렇다</td>
+								<td align="center" width="150px" style="background-color:lightgray;">보통이다</td>
+								<td align="center" width="100px" style="background-color:lightgray;">아니다</td>
+							</tr>
+							<tr>
+								<td>1. 꼼꼼한 편이다.</td>
+								<td align="center"><input type="radio" name="20.1bun" value="Y"></td>
+								<td align="center"><input type="radio" name="20.1bun" value="B"></td>
+								<td align="center"><input type="radio" name="20.1bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>2. 개인주의 내지 이기주의가 강한 편이다.</td>
+								<td align="center"><input type="radio" name="20.2bun" value="Y"></td>
+								<td align="center"><input type="radio" name="20.2bun" value="B"></td>
+								<td align="center"><input type="radio" name="20.2bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>3. 몸을 움직이는 일보다 앉아서 하는 일이 마음에 든다.</td>
+								<td align="center"><input type="radio" name="20.3bun" value="Y"></td>
+								<td align="center"><input type="radio" name="20.3bun" value="B"></td>
+								<td align="center"><input type="radio" name="20.3bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>4. 남성적인 면에 비해 여성적인 면이 많은 것 같다.</td>
+								<td align="center"><input type="radio" name="20.4bun" value="Y"></td>
+								<td align="center"><input type="radio" name="20.4bun" value="B"></td>
+								<td align="center"><input type="radio" name="20.4bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>5. 내성적이고 수줍음이 많아 사람들 앞에 나서기 어렵다.</td>
+								<td align="center"><input type="radio" name="20.5bun" value="Y"></td>
+								<td align="center"><input type="radio" name="20.5bun" value="B"></td>
+								<td align="center"><input type="radio" name="20.5bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>6. 한번 감정이 상하면 좀처럼 잘 풀리지 않는다.</td>
+								<td align="center"><input type="radio" name="20.6bun" value="Y"></td>
+								<td align="center"><input type="radio" name="20.6bun" value="B"></td>
+								<td align="center"><input type="radio" name="20.6bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>7. 남이 자기일에 간섭하는 것을 아주 싫어한다.</td>
+								<td align="center"><input type="radio" name="20.7bun" value="Y"></td>
+								<td align="center"><input type="radio" name="20.7bun" value="B"></td>
+								<td align="center"><input type="radio" name="20.7bun" value="N"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td height="70px"></td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" align="center">
+							<tr>
+								<td align="center" width="800px" style="background-color:lightgray;">21번</td>
+								<td align="center" width="100px" style="background-color:lightgray;">그렇다</td>
+								<td align="center" width="150px" style="background-color:lightgray;">보통이다</td>
+								<td align="center" width="100px" style="background-color:lightgray;">아니다</td>
+							</tr>
+							<tr>
+								<td>1. 솔직담백하다.</td>
+								<td align="center"><input type="radio" name="21.1bun" value="Y"></td>
+								<td align="center"><input type="radio" name="21.1bun" value="B"></td>
+								<td align="center"><input type="radio" name="21.1bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>2. 시작은 잘하나 마무리가 부족하다.</td>
+								<td align="center"><input type="radio" name="21.2bun" value="Y"></td>
+								<td align="center"><input type="radio" name="21.2bun" value="B"></td>
+								<td align="center"><input type="radio" name="21.2bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>3. 외부 일에 치중하여 가정에 대해서는 소홀한 편이다.</td>
+								<td align="center"><input type="radio" name="21.3bun" value="Y"></td>
+								<td align="center"><input type="radio" name="21.3bun" value="B"></td>
+								<td align="center"><input type="radio" name="21.3bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>4. 봉사정신이 많다.</td>
+								<td align="center"><input type="radio" name="21.4bun" value="Y"></td>
+								<td align="center"><input type="radio" name="21.4bun" value="B"></td>
+								<td align="center"><input type="radio" name="21.4bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>5. 사무에 밝고 일처리가 신속하다.</td>
+								<td align="center"><input type="radio" name="21.5bun" value="Y"></td>
+								<td align="center"><input type="radio" name="21.5bun" value="B"></td>
+								<td align="center"><input type="radio" name="21.5bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>6. 남의 잘못을 따지기 좋아한다.</td>
+								<td align="center"><input type="radio" name="21.6bun" value="Y"></td>
+								<td align="center"><input type="radio" name="21.6bun" value="B"></td>
+								<td align="center"><input type="radio" name="21.6bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>7. 성격이 급하며 싫증을 잘 느끼고 체념을 잘 한다.</td>
+								<td align="center"><input type="radio" name="21.7bun" value="Y"></td>
+								<td align="center"><input type="radio" name="21.7bun" value="B"></td>
+								<td align="center"><input type="radio" name="21.7bun" value="N"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td height="70px"></td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" align="center">
+							<tr>
+								<td align="center" width="800px" style="background-color:lightgray;">22번</td>
+								<td align="center" width="100px" style="background-color:lightgray;">그렇다</td>
+								<td align="center" width="150px" style="background-color:lightgray;">보통이다</td>
+								<td align="center" width="100px" style="background-color:lightgray;">아니다</td>
+							</tr>
+							<tr>
+								<td>1. 적극적이고 모든 일에 거침없이 행동한다.</td>
+								<td align="center"><input type="radio" name="22.1bun" value="Y"></td>
+								<td align="center"><input type="radio" name="22.1bun" value="B"></td>
+								<td align="center"><input type="radio" name="22.1bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>2. 여성적이기보다 남성적인 면이 많다.</td>
+								<td align="center"><input type="radio" name="22.2bun" value="Y"></td>
+								<td align="center"><input type="radio" name="22.2bun" value="B"></td>
+								<td align="center"><input type="radio" name="22.2bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>3. 창의력이 있다.</td>
+								<td align="center"><input type="radio" name="22.3bun" value="Y"></td>
+								<td align="center"><input type="radio" name="22.3bun" value="B"></td>
+								<td align="center"><input type="radio" name="22.3bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>4. 과단성이 있다.</td>
+								<td align="center"><input type="radio" name="22.4bun" value="Y"></td>
+								<td align="center"><input type="radio" name="22.4bun" value="B"></td>
+								<td align="center"><input type="radio" name="22.4bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>5. 일이 뜻대로 되지 않으면 참기 힘들 정도로 화가 난다.</td>
+								<td align="center"><input type="radio" name="22.5bun" value="Y"></td>
+								<td align="center"><input type="radio" name="22.5bun" value="B"></td>
+								<td align="center"><input type="radio" name="22.5bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>6. 자신이 한 일에 대해 후회하는 일이 거의 없다.</td>
+								<td align="center"><input type="radio" name="22.6bun" value="Y"></td>
+								<td align="center"><input type="radio" name="22.6bun" value="B"></td>
+								<td align="center"><input type="radio" name="22.6bun" value="N"></td>
+							</tr>
+							<tr>
+								<td>7. 영웅심 및 자존심이 강하다.</td>
+								<td align="center"><input type="radio" name="22.7bun" value="Y"></td>
+								<td align="center"><input type="radio" name="22.7bun" value="B"></td>
+								<td align="center"><input type="radio" name="22.7bun" value="N"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" height="150px" valign="bottom">
+						<a href="taeyangini.jsp"><input type="button" value="결과보기" id="result"></a>&emsp;
+						<input type="button" value="다시입력" id="reset">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

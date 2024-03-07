@@ -1,0 +1,318 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ include file="../admininclude/head.jsp" %> 
+					<tr>
+						<td width="120px" align="center">
+							<a href="adminclist.html" style="font-size:25px;font-weight: bold;">커뮤니티</a>
+						</td>
+						<td height="30px" valign="bottom" width="100px">
+							<select name="board" style="width: 100px; height: 40px;" >
+								<option value="1">전체</option>
+								<option value="2">자유게시판</option>
+								<option value="3">태양인게시판</option>
+								<option value="4">태음인게시판</option>
+								<option value="5">소양인게시판</option>
+								<option value="6">소음인게시판</option>
+							</select>
+						</td>
+						<td>
+							<a href="adminclist.html">
+							<img src="../image/설정.png" style="width: 20px; height: 20px;"></a>
+						</td>
+						<td height="30px" valign="bottom" align="right">
+							<select name="re" style="width: 100px; height: 30px">
+								<option value="A">조회수높</option>
+								<option value="B">조회수낮</option>
+								<option value="C">최근순</option>
+								<option value="D">오래된순</option>
+							</select>
+						</td>
+					</tr>
+					</table>
+					<table border="0" width="100%">
+					<tr>
+						<td colspan="6"><hr></td>
+					<tr>
+					<tr>
+						<td align="center" width="100px">번호</td>
+						<td align="center" width="100px">구분</td>
+						<td align="center">제목</td>
+						<td align="center" width="75px">글쓴이</td>
+						<td align="center" width="100px">작성일</td>
+						<td align="center" width="50px">조회수</td>
+					</tr>
+					<tr>
+						<td colspan="6"><hr></td>
+					</tr>
+					<tr>
+						<td align="center">1</td>
+						<td align="center">태양인게시판</td>
+						<td align="center"><a href="view.html">1번째 제목입니다.</a></td>
+						<td align="center">홍길동</td>
+						<td align="center">2023.11.30</td>
+						<td align="center">10</td>
+					</tr>
+					<tr>
+						<td colspan="6"><hr></td>
+					</tr>
+					<tr>
+						<td align="center">2</td>
+						<td align="center">태양인게시판</td>
+						<td align="center"><a href="view.html">2번째 제목입니다.</a></td>
+						<td align="center">홍길동</td>
+						<td align="center">2023.11.30</td>
+						<td align="center">10</td>
+					</tr>
+					<tr>
+						<td colspan="6"><hr></td>
+					</tr>
+					<tr>
+						<td align="center">3</td>
+						<td align="center">태양인게시판</td>
+						<td align="center"><a href="view.html">3번째 제목입니다.</a></td>
+						<td align="center">홍길동</td>
+						<td align="center">2023.11.30</td>
+						<td align="center">10</td>
+					</tr>
+					<tr>
+						<td colspan="6"><hr></td>
+					</tr>
+					<tr>
+						<td align="center">4</td>
+						<td align="center">태양인게시판</td>
+						<td align="center"><a href="view.html">4번째 제목입니다.</a></td>
+						<td align="center">홍길동</td>
+						<td align="center">2023.11.30</td>
+						<td align="center">10</td>
+					</tr>
+					<tr>
+						<td colspan="6"><hr></td>
+					</tr>
+					<tr>
+						<td align="center">5</td>
+						<td align="center">태양인게시판</td>
+						<td align="center"><a href="view.html">5번째 제목입니다.</a></td>
+						<td align="center">홍길동</td>
+						<td align="center">2023.11.30</td>
+						<td align="center">10</td>
+					</tr>
+					<tr>
+						<td colspan="6"><hr></td>
+					</tr>
+					<tr>
+						<td align="center">6</td>
+						<td align="center">태양인게시판</td>
+						<td align="center"><a href="view.html">6번째 제목입니다.</a></td>
+						<td align="center">홍길동</td>
+						<td align="center">2023.11.30</td>
+						<td align="center">10</td>
+					</tr>
+					<tr>
+						<td colspan="6"><hr></td>
+					</tr>
+					<tr>
+						<td align="center">7</td>
+						<td align="center">태양인게시판</td>
+						<td align="center"><a href="view.html">7번째 제목입니다.</a></td>
+						<td align="center">홍길동</td>
+						<td align="center">2023.11.30</td>
+						<td align="center">10</td>
+					</tr>
+					</table>
+					</div>
+					<div class="category">
+					<table border="0" width="100%" style="margin-top: 10px">
+						<tr>
+							<td width="80px" colspan="2" align="center">
+								<a href="admincategory.html" style="font-size:25px;font-weight: bold;">카테고리</a>
+							</td>
+							<td width="100px" height="30px" valign="bottom">
+								<select name="category" style="width: 100px; height: 40px;" >
+									<option value="1">전체</option>
+									<option value="2">채소</option>
+									<option value="3">과일</option>
+									<option value="4">건강식품</option>
+									<option value="5">수산</option>
+									<option value="6">정육</option>
+								</select>
+							</td>
+							<td>
+								<a href="admincategory.html">
+								<img src="../image/설정.png" style="width: 20px; height: 20px;"></a>
+							</td>
+							<td height="30px" valign="bottom" align="right" >
+								<select name="re" style="width: 100px; height: 30px">
+									<option value="A">조회수높</option>
+									<option value="B">조회수낮</option>
+									<option value="C">최근순</option>
+									<option value="D">오래된순</option>
+								</select>
+							</td>
+						</tr>
+						</table>
+						<table border="0" width="100%">
+						<tr>
+							<td colspan="6"><hr></td>
+						<tr>
+						<tr>
+							<td align="center" width="50px">번호</td>
+							<td align="center" width="50px">구분</td>
+							<td align="center" colspan="2">제목</td>
+							<td align="center" width="50px">작성일</td>
+							<td align="center" width="50px">조회수</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center">1</td>
+							<td align="center">과일</td>
+							<td align="center" colspan="2"><a href="view.html" >사과</a></td>
+							<td align="center">2023.11.30</td>
+							<td align="center">10</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center">2</td>
+							<td align="center">과일</td>
+							<td align="center" colspan="2"><a href="view.html">배</a></td>
+							<td align="center">2023.11.30</td>
+							<td align="center">10</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center">3</td>
+							<td align="center">과일</td>
+							<td align="center" colspan="2"><a href="view.html">블루베리</a></td>
+							<td align="center">2023.11.30</td>
+							<td align="center">10</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center">4</td>
+							<td align="center">과일</td>
+							<td align="center" colspan="2"><a href="view.html">굴</a></td>
+							<td align="center">2023.11.30</td>
+							<td align="center">10</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center">5</td>
+							<td align="center">과일</td>
+							<td align="center" colspan="2"><a href="view.html">늙은호박</a></td>
+							<td align="center">2023.11.30</td>
+							<td align="center">10</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center">6</td>
+							<td align="center">과일</td>
+							<td align="center" colspan="2"><a href="view.html">고등어</a></td>
+							<td align="center">2023.11.30</td>
+							<td align="center">10</td>
+						</tr>
+						<tr>
+							<td colspan="6"><hr></td>
+						</tr>
+						<tr>
+							<td align="center">7</td>
+							<td align="center">과일</td>
+							<td align="center" colspan="2"><a href="view.html">귤</a></td>
+							<td align="center">2023.11.30</td>
+							<td align="center">10</td>
+						</tr>
+					</table>
+					</div>
+					<div class="member">
+						<table border="0" width="95%" style="margin-top: 10px" align="center">
+					<tr>
+						<td width="90px" colspan="2" height="40px" colspan="6">
+							<a href="member.html" style="font-size:25px;font-weight: bold;">사용자관리</a>
+							<a href="member.html"><img src="../image/설정.png" width="20px" height="20px"></a>
+						</td>
+					</tr>
+					</table>
+					<table border="0" width="100%">
+					<tr>
+						<td colspan="6"><hr></td>
+					<tr>
+					<tr>
+						<td align="center" width="70px">회원번호</td>
+						<td align="center" width="100px">아이디</td>
+						<td align="center" colspan="2">닉네임</td>
+						<td align="center" width="100px">가입일</td>
+					</tr>
+					<tr>
+						<td colspan="5"><hr></td>
+					</tr>
+					<tr>
+						<td align="center">1</td>
+						<td align="center"><a href="memberpage.html" >hong</a></td>
+						<td align="center" colspan="2">홍홍길동</td>
+						<td align="center">2023.11.30</td>
+					</tr>
+					<tr>
+						<td colspan="5"><hr></td>
+					</tr>
+					<tr>
+						<td align="center">1</td>
+						<td align="center"><a href="memberpage.html" >hong</a></td>
+						<td align="center" colspan="2">홍홍길동</td>
+						<td align="center">2023.11.30</td>
+					</tr>
+					<tr>
+						<td colspan="5"><hr></td>
+					</tr>
+					<tr>
+						<td align="center">1</td>
+						<td align="center"><a href="memberpage.html" >hong</a></td>
+						<td align="center" colspan="2">홍홍길동</td>
+						<td align="center">2023.11.30</td>
+					</tr>
+					<tr>
+						<td colspan="5"><hr></td>
+					</tr>
+					<tr>
+						<td align="center">1</td>
+						<td align="center"><a href="memberpage.html" >hong</a></td>
+						<td align="center" colspan="2">홍홍길동</td>
+						<td align="center">2023.11.30</td>
+					</tr>
+					<tr>
+						<td colspan="5"><hr></td>
+					</tr>
+					<tr>
+						<td align="center">1</td>
+						<td align="center"><a href="memberpage.html" >hong</a></td>
+						<td align="center" colspan="2">홍홍길동</td>
+						<td align="center">2023.11.30</td>
+					</tr>
+					<tr>
+						<td colspan="5"><hr></td>
+					</tr>
+					<tr>
+						<td align="center">1</td>
+						<td align="center"><a href="memberpage.html" >hong</a></td>
+						<td align="center" colspan="2">홍홍길동</td>
+						<td align="center">2023.11.30</td>
+					</tr>
+					<tr>
+						<td colspan="5"><hr></td>
+					</tr>
+					<tr>
+						<td align="center">1</td>
+						<td align="center"><a href="memberpage.html" >hong</a></td>
+						<td align="center" colspan="2">홍홍길동</td>
+						<td align="center">2023.11.30</td>
+					</tr>
+<%@ include file="../admininclude/tail.jsp" %>

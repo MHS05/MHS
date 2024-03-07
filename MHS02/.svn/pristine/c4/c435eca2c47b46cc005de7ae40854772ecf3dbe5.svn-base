@@ -1,0 +1,108 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ include file="../include/head.jsp" %> 
+		<table border="0" align="center" width="1200px" height="1000px">
+			<tr>
+				<td rowspan="5" width="20%" valign="top">
+					<table border="0" align="left" width="200px" height="50px">
+						<tr>
+							<td>
+							<div><a href="category.jsp"><h1><u>카테고리</u></h1></a></div> 
+							</td>
+						</tr>
+						<tr height="50px">
+							<td style="font-size: 20px;"><a href="vegetable.jsp"><b>채소</b></a></td>
+						</tr>
+						<tr height="50px">
+							<td style="font-size: 20px;"><a href="fruit.jsp"><b>과일</b></a></td>
+						</tr>
+						<tr height="50px">
+							<td style="font-size: 20px;"><a href="healthFood.jsp"><b>건강식품</b></td>
+						</tr>
+						<tr height="50px">
+							<td style="font-size: 20px;"><a href="fish.jsp"><b>수산</b></td>
+						</tr>
+						<tr height="50px">
+							<td style="font-size: 20px;"><a href="meat.jsp"><b>정육</b></td>
+						</tr>
+					</table>
+				</td>
+				<td colspan="2" ><h1 style="margin-left: 50px">사과</h1></td>
+			</tr>
+			<tr>
+				<td rowspan="3" align="center" width="400px">
+					<img src="../image/사과(2).jpg" width="300px" height="350px">
+				</td>
+				<td><h2>1.기본정보 및 효능</h2>
+					· 구입요령 : 껍질에 탄력이 있고 꽉 찬 느낌이 드는 것이 좋다. 손가락으로 튕겨 보았을 때 맑은 소리가 나는 것이 좋다.<br>
+					· 보관온도 : 1~5℃<br>
+					· 보관일 : 7일<br>
+					· 보관법 : 다른 과일와 같이 보관하면 다른 과일이 쉽게 숙성하기에 사과는 따로 봉지에 넣어 보관해야 한다.<br>
+					· 손질법 : 잘익은 사과를 골라 깨끗한 물에 씻어 물기를 말끔히 닦아낸다.<br>
+					· 효능 : 항산화작용 (사과껍질 안의 퀄세틴은 항산화작용이 뛰어나며 항바이러스, 항균작용에 도움이된다.)
+				</td>
+			</tr>
+			<tr>
+				<td><h2>2.섭취정보</h2>
+					· 섭취방법 : 생으로 깎아 섭취하거나, 잼, 주스 등 여러 요리에 사용된다.<br>
+					· 궁합음식정보 : 삼겹살 (육식으로 과잉 섭취되는 염분 배출에 도움이 된다.)<br>
+					· 다이어트 : 식이섬유가 많고 다당류 비율이 높아 다이어트에 도움이 된다.
+				</td>
+			</tr>
+			<tr>
+				<td height="100px">
+				<a href="https://www.kurly.com/goods/1000122762" style="font-size: 20px;">Go to the link 마켓컬리</a>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<table border="0" align="center" width="600" height="50px">
+						<tr>
+							<td colspan="6">
+								<h2>3.영양성분 (100g 기준)</h2>
+							<td>
+						</tr>
+					</table>
+					<table border="1" align="center" width="600">
+						<tr>
+							<td>니아신<br>0.10mg</td>
+							<td>나트륨<br>3.00mg</td>
+							<td>단백질<br>0.30g</td>
+							<td>당질<br>15.30g</td>
+							<td>레티놀<br>0.00㎍</td>
+							<td>베타카로틴<br>19.00㎍</td>
+						</tr>
+						<tr>
+							<td>비타민 A<br>3.00㎍RE</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>식이섬유<br>1.50g</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>칼륨<br>95.00mg</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center">&emsp;&emsp;&emsp;&emsp;
+					<a href="category.jsp"><input type="button" value="목록" style="width:50px; height:25px";></a>
+				</td>	
+			</tr>
+		</table>
+<%@ include file="../include/tail.jsp" %> 

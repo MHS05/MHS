@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>나만의 건강 쇼핑몰</title>
+	</head>
+	<body>
+	<style>
+		.button
+		{
+			background-color: lightgray;
+			text-align: center;
+			vertical-align : middle;
+			padding-top : 4px;
+			height: 25px;
+			width : 80px;
+			float:right;
+			border-radius: 15px;
+		}
+	
+		.nav
+		{
+			background-color: #4dd5b0;
+
+		}
+		.nav div
+		{
+			float:left; 
+			margin-left: 60px;
+
+		}
+		a, .nav div a, .month 
+		{
+			text-decoration: none;
+			color: black;
+		}
+		
+	</style>
+		<form>
+			<table border="0" width="1200px" align="center">
+				<tr>
+					<td rowspan="2" width="250px">
+						<a href="index.html"><img style="width:250px; height: 200px;" src="../image/logo.png"></a>
+					</td>
+					<td colspan="4" height="50px" align="right">
+						<div class="button" style="background-color: white; width:10px;"></div>
+						[태양인]홍길동님
+						<a href="./myPage/myPage.html"><ins>마이페이지</ins></a>
+						<div class="button" style="background-color: white; width:10px;"></div>
+						<a href="index.html"><ins>로그아웃</ins></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="nav">
+						<div>
+							<a href="category.html"><h1>카테고리</h1></a>
+						</div> 
+						<div>
+							<a href="community.html"><h1><u>커뮤니티</u></h1></a>
+						</div> 
+						<div>
+							<a href="notice.html"><h1>공지사항</h1></a>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<form method="get" action="communitylist.html">
+		<table border="1" align="center" width="1200px">
+			<tr>
+				<td rowspan="20" width="20%" valign="top" height="1000px">
+					<table  border="0" align="left" width="200" >
+						<tr>
+							<td valign="top"><a href="category.html"><h1><u>커뮤니티</u></h1></a></td>
+						</tr>
+						<tr height="50px">
+							<td valign="top" style="font-size: 20px;"><a href="communitylist.html" style="text-decoration:underline;"><b>자유게시판</b></a></td>
+						</tr>
+						<tr height="50px">
+							<td valign="top" style="font-size: 20px;"><a href="taiyanglist.html"><b>태양인게시판</b></a></td>
+						</tr>
+						<tr height="50px">
+							<td valign="top" style="font-size: 20px;"><a href="taiemlist.html"><b>태음인게시판</b></td>
+						</tr>
+						<tr height="50px">
+							<td valign="top" style="font-size: 20px;"><a href="soyanglist.html"><b>소양인게시판</b></td>
+						</tr>
+						<tr height="50px">
+							<td valign="top" style="font-size: 20px;"><a href="soemlist.html"><b>소음인게시판</b></td>
+						</tr>
+					</table>
+				</td>
+				<td colspan="3" height="50px"><h2>자유게시판</h2></td>
+			</tr>
+			<tr>
+				<td colspan="3" height="20px"><hr></td>
+			<tr>
+			<tr>
+				<td colspan="3" height="50px"><h2>제목입니다.</h2></td>
+			</tr>
+			<tr>
+				<td width="70px" height="20px">글쓴이</td>
+				<td width="90px" height="20px">조회수 3회</td>
+				<td height="20px">2023.12.01</td>
+			</tr>
+			<tr>
+				<td colspan="3" height="20px"><hr></td>
+			<tr>
+			<tr>
+				<td colspan="3" heigth="500px" valign="top">
+				<img style="width:250px; height: 200px;" src="../image/logo.png">
+				<br>
+				없는 사막이다 보이는 끝까지 찾아다녀도 목숨이 있는 때까지 방황하여도 보이는 것은 거친 모래뿐일 것이다 이상의 꽃이 없으면 쓸쓸한 인간에 남는 것은 영락과 부패 뿐이다 낙원을 장식하는 천자만홍이 어디 있으며 인생을 풍부하게 하는
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="right" height="20px"><input type="submit" value="수정">&nbsp<input type="submit" value="삭제"></td>
+			<tr>
+			<tr>
+				<td colspan="3" height="20px"><hr></td>
+			<tr>
+			<tr>
+				<td height="20px">첨부파일:</td>
+				<td colspan="2" height="20px">index.jsp</td>
+			</tr>
+			<tr>
+				<td colspan="3" height="20px"><hr></td>
+			<tr>
+			<tr>
+				<td height="60px" width="100%" colspan="3" style="background-color:lightgrey;">
+				홍길동
+				<br>
+				댓글내용 ~~~~~~~~~~~~~~~~~ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<input type="submit" value="답글">&nbsp<input type="submit" value="수정">&nbsp<input type="submit" value="삭제">
+				</td>
+			</tr>
+			<tr>
+				<td height="60px" width="100%" colspan="3" style="background-color:lightgrey;">
+					성춘향
+					<br>
+					댓글내용 ~~~~~~~~~~~~~~~~~ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<input type="submit" value="답글">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" width="100%" height="50px">
+					홍길동
+					<br>
+					<form action="reply.html" method="get">
+					    <textarea name="opinion" cols="100" rows="3"></textarea><br>
+					    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" value="등록">
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" colspan="3" height="20px"><input type="submit" value="목록" style="background-color:#4dd5b0;"></td>
+			</tr>
+		</table>
+		</form>
+	</body>
+
+		<br>
+		<br>
+		<table border="0" width="1200px" align="center" height="150px">
+				<tr>
+					<td rowspan="5" width="250px" align="center">
+						<img style="width:100px; height: 100px;" src="../image/market.png">
+					</td>
+					<td rowspan="5" width="10px">
+					</td>
+					<td colspan="2" height="15px" align="right">
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td width="450px">
+						상담가능시간
+					</td>
+					<td>
+						회사정보
+					</td>
+				</tr>
+				<tr>
+					<td>
+						평일 : 오전 09:00 ~ 오후 06:00
+					</td>
+					<td>
+						회사이름 : ezen  |  전화번호 : 010-0000-0000
+					</td>
+				</tr>
+				<tr>
+					<td>
+						점심시간 : 오후 12:00 ~ 오후 01:00
+					</td>
+					<td>
+						이메일 : asdf@naver.com  |  대한민국 전주시
+					</td>
+				</tr>
+				<tr>
+					<td>
+						주말 휴무
+					</td>
+					<td>
+						팩스 : 00-000-0000
+					</td>
+				</tr>
+			</table>
+	</body>
+</html>

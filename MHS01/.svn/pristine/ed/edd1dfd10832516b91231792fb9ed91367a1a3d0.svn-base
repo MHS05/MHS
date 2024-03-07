@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>나만의 건강 쇼핑몰</title>
+	</head>
+	<body>
+	<style>
+		
+		.button
+		{
+			background-color: lightgray;
+			text-align: center;
+			vertical-align : middle;
+			padding-top : 4px;
+			height: 25px;
+			width : 80px;
+			float:right;
+			border-radius: 15px;
+		}
+	
+		.nav
+		{
+			background-color: #4dd5b0;
+
+		}
+		.nav div
+		{
+			float:left; 
+			margin-left: 60px;
+
+		}
+		a, .nav div a, .month 
+		{
+			text-decoration: none;
+			color: black;
+		}
+		
+		
+	</style>
+		<form>
+			<table border="0" width="1200px" align="center">
+				<tr>
+					<td rowspan="2" width="250px">
+						<a href="../main/index2.html"><img style="width:250px; height: 200px;" src="../image/logo.png"></a>
+					</td>
+					<td colspan="4" height="50px" align="right" valign="bottom" style="font-size: 14px; font-weight: 700;">
+						<a href="../test/test.html" ><ins>나의 체질 검사하기</ins></a>
+						<div class="button" style="background-color: white; width:10px;"></div>
+						홍길동님
+						<div class="button" style="background-color: white; width:10px;"></div>
+						<a href="../myPage/myPage.html"><ins>마이페이지</ins></a>
+						<div class="button" style="background-color: white; width:10px;"></div>
+						<a href="../main/index.html"><ins>로그아웃</ins></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="nav">
+						<div>
+							<a href="../category/category.html"><h1>카테고리</h1></a>
+						</div> 
+						<div>
+							<a href="../logino/community/communitylist.html"><h1>커뮤니티</h1></a>
+						</div> 
+						<div>
+							<a href="../loginx/notice/noticelist.html"><h1>공지사항</h1></a>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<table border="0" width="1200px" align="center">
+			<tr>
+				<td rowspan="11" width="300px"><td>
+			</tr>
+			<tr>
+				<td colspan="3"><h2>회원정보수정</h2><hr></td>
+			</tr>
+			<tr>
+				<td style="width:200px"><h3>아이디*</h3></td>
+				<td style="width:200px">hong</td>
+			</tr>
+			<tr>
+				<td><h3>비밀번호*</h3></td>
+				<td>****</td>
+				<td><a href="changePW.html"><input type="button" value="비밀번호 수정" style="width:150px; height:50px";></a></td>
+			</tr>
+			<tr>
+				<td><h3>이름*</h3></td>
+				<td>홍길동</td>
+			</tr>
+			<tr>
+				<td><h3>닉네임*</h3></td>
+				<td>hgd</td>
+				<td><a href="changeNickName.html"><input type="button" value="닉네임 수정" style="width:150px; height:50px";></a></td>
+			</tr>
+			<tr>
+				<td><h3>성별*</h3></td>
+				<td>남자</td>
+			</tr>
+			<tr>
+				<td><h3>생년월일*</h3></td>
+				<td>2023년 11월 28일</td>
+			</tr>
+			<tr>
+				<td><h3>나의체질</h3></td>
+				<td>태양인</td>
+				<td><a href="re.html"><input type="button" value="체질 재조사 하기" style="width:150px; height:50px";></a></td>
+			</tr>
+			<tr>
+				<td colspan="3" style="height:50px"><td>
+			</tr>
+			<tr>
+				<td colspan="2" align="right">
+					<a href="modify.html"><input type="button" value="수정완료" style="width:100px; height:50px;";></a>&emsp;&emsp;
+					<a href="myPage.html"><input type="button" value="취소" style="width:100px; height:50px";></a>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

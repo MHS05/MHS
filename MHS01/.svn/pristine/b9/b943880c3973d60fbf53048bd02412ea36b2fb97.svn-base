@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>나만의 건강 쇼핑몰</title>
+	</head>
+	<body>
+		<style>
+		.button
+		{
+			background-color: lightgray;
+			text-align: center;
+			vertical-align : middle;
+			padding-top : 4px;
+			height: 25px;
+			width : 80px;
+			float:right;
+			border-radius: 15px;
+		}
+	
+		.nav
+		{
+			background-color: #4dd5b0;
+
+		}
+		.nav div
+		{
+			float:left; 
+			margin-left: 60px;
+
+		}
+		a, .nav div a, .month 
+		{
+			text-decoration: none;
+			color: black;
+		}
+		
+	</style>
+		<form>
+			<table border="0" width="1200px" align="center">
+				<tr>
+					<td rowspan="2" width="250px">
+						<a href="index.html"><img style="width:250px; height: 200px;" src="../image/logo.png"></a>
+					</td>
+					<td colspan="4" height="50px" align="right">
+						<a href="login/join.html"><div class="button">회원가입</div></a>
+						<div class="button" style="background-color: white; width:10px;"></div>
+						<a href="login/login.html" onClick="window.open(this.href, '', 'width=380, height=540'); return false;"><div class="button">로그인</div></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="nav">
+						<div>
+							<a href="category.html"><h1>카테고리</h1></a>
+						</div> 
+						<div>
+							<a href="community.html"><h1>커뮤니티</h1></a>
+						</div> 
+						<div>
+							<a href="notice.html"><h1>공지사항</h1></a>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<table border="0" width="1200px" align="center">
+			<tr height="50px">
+				<td rowspan="5" width="100px">
+				</td>				
+				<td align="center">
+					<p style="font-size: 200%;">
+						<b>당신의 건강을 저희에게 맡겨 보시겠어요?</b>
+					</p>
+				</td>
+			</tr>
+				
+			<tr>
+				<td align="center">
+					<h3>오늘은 12월 1일 입니다. &nbsp;&nbsp;몸에 좋은 제철 음식을 소개합니다</h3>
+				</td>
+			</tr>
+			<tr height="50px">
+				<td align="center" style="font-size: 20px;" >
+					<a class="month" href="index.html?month=1">1월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=2">2월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=3">3월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=4">4월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=5">5월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=6">6월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=7">7월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=8">8월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=9">9월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=10">10월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=11">11월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=12">12월</a>&nbsp;&nbsp;
+				</td>
+			</tr>
+				<tr height="30px">
+					<td align="center" style="font-size: 20px;">
+					&emsp;&emsp;<a class="month" href="index.html">◀</a>&emsp;&emsp;
+					<a class="month" href="index.html">전체</a>&emsp;&emsp;
+					<a class="month" href="index.html"><b>굴</b></font></a>&emsp;&emsp;
+					<a class="month" href="index.html">사과</a>&emsp;&emsp;
+					<a class="month" href="index.html">홍합</a>&emsp;&emsp;
+					<a class="month" href="index.html">꼬막</a>&emsp;&emsp;
+					<a class="month" href="index.html">배추</a>&emsp;&emsp;
+					<a class="month" href="index.html">무</a>&emsp;&emsp;
+					<a class="month" href="index.html">대하</a>&emsp;&emsp;
+					<a class="month" href="index.html">▶</a>&emsp;&emsp;
+					</td>
+				</tr>
+				<tr>
+					<td colspan="5">
+				<table border="0" width="700px" align="center">
+					<tr height="20px">
+						<td colspan="2">
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="5" align="center" valign="middle" width="200px">
+							<img src="../image/굴.png" width="150px" height="150px" >
+						</td>
+						<td rowspan="5" width="40px">
+						</td>
+						<td style="font-weight: bold; font-size: 20px">
+							굴
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span style="color:red; font-weight: bold;">9~12월</span> 
+							<span>칼로리</span> 
+							<span>97Kcal</span>(100g)
+						</td>
+					</tr>
+					<tr>
+						<td>
+							바다의 우유라 불리는 굴은 영양이 가득한 재료입니다.<br>
+							바다의 맛도 챙기고 건강도 챙기는 일석이조 먹거리!<br> 
+							카사노바도 즐겨먹었다는 건강 먹거리랍니다.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../category/info.html" ><font color="blue"><ins>자세히 보기</ins></font></a>
+						</td>
+					</tr>
+				</table>
+				</td>
+				</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" width="1200px" align="center" height="150px">
+				<tr>
+					<td rowspan="5" width="250px" align="center">
+						<img style="width:100px; height: 100px;" src="../image/market.png">
+					</td>
+					<td rowspan="5" width="10px">
+					</td>
+					<td colspan="2" height="15px" align="right">
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td width="450px">
+						상담가능시간
+					</td>
+					<td>
+						회사정보
+					</td>
+				</tr>
+				<tr>
+					<td>
+						평일 : 오전 09:00 ~ 오후 06:00
+					</td>
+					<td>
+						회사이름 : ezen  |  전화번호 : 010-0000-0000
+					</td>
+				</tr>
+				<tr>
+					<td>
+						점심시간 : 오후 12:00 ~ 오후 01:00
+					</td>
+					<td>
+						이메일 : asdf@naver.com  |  대한민국 전주시
+					</td>
+				</tr>
+				<tr>
+					<td>
+						주말 휴무
+					</td>
+					<td>
+						팩스 : 00-000-0000
+					</td>
+				</tr>
+			</table>
+	</body>
+</html>

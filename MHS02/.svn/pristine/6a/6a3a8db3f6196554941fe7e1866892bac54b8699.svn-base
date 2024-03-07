@@ -1,0 +1,152 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>나만의 건강 쇼핑몰</title>
+	</head>
+	<body>
+		<style>
+		.button
+		{
+			background-color: lightgray;
+			text-align: center;
+			vertical-align : middle;
+			padding-top : 4px;
+			height: 25px;
+			width : 80px;
+			float:right;
+			border-radius: 15px;
+		}
+	
+		.nav
+		{
+			background-color: #4dd5b0;
+
+		}
+		.nav div
+		{
+			float:left; 
+			margin-left: 60px;
+
+		}
+		a, .nav div a, .month 
+		{
+			text-decoration: none;
+			color: black;
+		}
+		
+	</style>
+		<form>
+			<table border="0" width="1200px" align="center">
+				<tr>
+					<td rowspan="2" width="250px">
+						<a href="../main/index2.jsp"><img style="width:250px; height: 200px;" src="../image/logo.png"></a>
+					</td>
+					<td colspan="4" height="50px" align="right" valign="bottom" style="font-size: 14px; font-weight: 700;">
+						<a href="../test/test.jsp" ><ins>나의 체질 검사하기</ins></a>
+						<div class="button" style="background-color: white; width:10px;"></div>
+						홍길동님
+						<div class="button" style="background-color: white; width:10px;"></div>
+						<a href="../myPage/myPage.jsp"><ins>마이페이지</ins></a>
+						<div class="button" style="background-color: white; width:10px;"></div>
+						<a href="../main/index.jsp"><ins>로그아웃</ins></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="nav">
+						<div>
+							<a href="../category/category.jsp"><h1>카테고리</h1></a>
+						</div> 
+						<div>
+							<a href="../logino/community/communitylist.jsp"><h1>커뮤니티</h1></a>
+						</div> 
+						<div>
+							<a href="../loginx/notice/noticelist.jsp"><h1>공지사항</h1></a>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<br>
+		<br>
+		<table border="0" align="center" width="1100px">
+				<tr>
+					<td rowspan="10" style="width:280px"></td>
+				</tr>
+				<tr style="height:80px">
+					<td colspan="2"><h2>마이페이지</h2></td>
+				</tr>
+				<tr>
+					<td colspan="2"><hr style="width : 100%;"><td>
+				</tr>
+				<tr style="height:100px">
+					<td style="width:400px";><h3>내가 쓴 게시물</h3><hr></td>
+					<td><h3>회원정보</h3><hr></td>
+				</tr>
+				<tr style="height:50px">
+					<td><a href="myPage1.jsp"><u>게시물 목록보기</u></a></td>
+					<td><a href="modify.jsp"><u>회원정보 수정</u></a></td>
+				</tr>
+				<tr>
+					<td colspan="2" style="height:100px"></td>
+				</tr>
+				<tr style="height:100px"> 
+					<td><h3>내가 쓴 댓글</h3><hr></td>
+					<td><h3>회원탈퇴</h3><hr></td>
+				</tr>
+				<tr style="height:50px">
+					<td><a href="myPage2.jsp"><u>댓글 쓴 게시물 목록 보기</u></a></td>
+					<td><a href="deleteID.jsp"><u>회원탈퇴</u></a></td>
+				</tr>
+			</table>
+		<br>
+		<br>
+		<br>
+		<br>
+		<table border="0" width="1200px" align="center" height="150px">
+				<tr>
+					<td rowspan="5" width="250px" align="center">
+						<img style="width:100px; height: 100px;" src="../image/market.png">
+					</td>
+					<td rowspan="5" width="10px">
+					</td>
+					<td colspan="2" height="15px" align="right">
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td width="450px">
+						상담가능시간
+					</td>
+					<td>
+						회사정보
+					</td>
+				</tr>
+				<tr>
+					<td>
+						평일 : 오전 09:00 ~ 오후 06:00
+					</td>
+					<td>
+						회사이름 : ezen  |  전화번호 : 010-0000-0000
+					</td>
+				</tr>
+				<tr>
+					<td>
+						점심시간 : 오후 12:00 ~ 오후 01:00
+					</td>
+					<td>
+						이메일 : asdf@naver.com  |  대한민국 전주시
+					</td>
+				</tr>
+				<tr>
+					<td>
+						주말 휴무
+					</td>
+					<td>
+						팩스 : 00-000-0000
+					</td>
+				</tr>
+		</table>
+<%@ include file="../include/tail.jsp" %> 

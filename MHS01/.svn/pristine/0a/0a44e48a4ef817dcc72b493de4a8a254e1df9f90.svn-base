@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>나만의 건강 쇼핑몰</title>
+		<link rel="stylesheet" href="mhs.css">
+	</head>
+	<body>
+		<style>
+		.button
+		{
+			background-color: lightgray;
+			text-align: center;
+			vertical-align : middle;
+			padding-top : 4px;
+			height: 25px;
+			width : 80px;
+			float:right;
+			border-radius: 15px;
+		}
+	
+		.nav
+		{
+			background-color: #4dd5b0;
+
+		}
+		.nav div
+		{
+			float:left; 
+			margin-left: 60px;
+
+		}
+		a, .nav div a, .month 
+		{
+			text-decoration: none;
+			color: black;
+		}
+		
+	</style>
+		<form>
+			<table border="0" width="1200px" align="center">
+				<tr>
+					<td rowspan="2" width="250px">
+						<a href="index.html"><img style="width:250px; height: 200px;" src="../image/logo.png"></a>
+					</td>
+					<td colspan="4" height="50px" align="right" valign="bottom" style="font-size: 14px; font-weight: 700;">
+						<a href="../test/test.html" ><ins>나의 체질 검사하기</ins></a>
+						<div class="button" style="background-color: white; width:10px;"></div>
+						홍길동님
+						<div class="button" style="background-color: white; width:10px;"></div>
+						<a href="../myPage/myPage.html"><ins>마이페이지</ins></a>
+						<div class="button" style="background-color: white; width:10px;"></div>
+						<a href="index.html"><ins>로그아웃</ins></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="nav">
+						<div>
+							<a href="../category/category.html"><h1>카테고리</h1></a>
+						</div> 
+						<div>
+							<a href="../logino/community/communitylist.html"><h1>커뮤니티</h1></a>
+						</div> 
+						<div>
+							<a href="../notice/nlist.html"><h1>공지사항</h1></a>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<table border="0" width="1200px" align="center">
+			<tr height="50px">
+				<td rowspan="5" width="100px">
+				</td>				
+				<td align="center">
+					<p style="font-size: 200%;">
+						<b>당신의 건강을 저희에게 맡겨 보시겠어요?</b>
+					</p>
+				</td>
+			</tr>
+				
+			<tr>
+				<td align="center">
+					<h3>오늘은 12월 1일 입니다. &nbsp;&nbsp;몸에 좋은 제철 음식을 소개합니다</h3>
+				</td>
+			</tr>
+			<tr height="50px">
+				<td align="center" style="font-size: 20px;" >
+					<a class="month" href="index.html?month=1">1월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=2">2월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=3">3월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=4">4월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=5">5월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=6">6월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=7">7월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=8">8월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=9">9월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=10">10월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=11">11월</a>&nbsp;&nbsp;
+					<a class="month" href="index.html?month=12">12월</a>&nbsp;&nbsp;
+				</td>
+			</tr>
+				<tr height="30px">
+					<td align="center" style="font-size: 20px;">
+					&emsp;&emsp;<a class="month" href="index.html">◀</a>&emsp;&emsp;
+					<a class="month" href="index.html">전체</a>&emsp;&emsp;
+					<a class="month" href="index.html">굴</a>&emsp;&emsp;
+					<a class="month" href="index.html">사과</a>&emsp;&emsp;
+					<a class="month" href="index.html">홍합</a>&emsp;&emsp;
+					<a class="month" href="index.html">꼬막</a>&emsp;&emsp;
+					<a class="month" href="index.html">배추</a>&emsp;&emsp;
+					<a class="month" href="index.html">무</a>&emsp;&emsp;
+					<a class="month" href="index.html">대하</a>&emsp;&emsp;
+					<a class="month" href="index.html">▶</a>&emsp;&emsp;
+					</td>
+				</tr>
+				<tr>
+					<td colspan="5">
+				<table border="0" width="700px" align="center">
+				<tr>
+					<td align="center">
+						<a href="index.html">
+						<img src="../image/굴.png"><br>
+						굴</a><br>
+						9~12월
+					</td>
+					<td align="center">
+						<a href="index.html">
+						<img src="../image/사과.png"><br>
+						사과</a><br>
+						10~12월
+					</td>
+					<td align="center">
+						<a href="index.html">
+						<img src="../image/홍합.png"><br>
+						홍합</a><br>
+						10~12월
+					</td>
+					<td align="center">
+						<a href="index.html">
+						<img src="../image/꼬막.png"><br>
+						꼬막</a><br>
+						11~3월
+					</td>
+					<td align="center">
+						<a href="index.html">
+						<img src="../image/배추.png"><br>
+						배추</a><br>
+						11~12월
+					</td>
+				</tr>
+				<tr>
+					<td colspan="5">
+					<hr>
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+						<a href="index.html">
+						<img src="../image/무.png"><br>
+						무</a><br>
+						10~12월
+					</td>
+					<td align="center">
+						<a href="index.html">
+						<img src="../image/늙은호박.png"><br>
+						늙은호박</a><br>
+						10~12월
+					</td>
+					<td align="center">
+						<a href="index.html">
+						<img src="../image/대하.png"><br>
+						대하</a><br>
+						9~12월
+					</td>
+					<td align="center">
+						<a href="index.html">
+						<img src="../image/삼치.png"><br>
+						삼치</a><br>
+						10~2월
+					</td>
+					<td align="center">
+						<a href="index.html">
+						<img src="../image/유자.png"><br>
+						유자</a><br>
+						11~12월
+					</td>
+				</tr>
+				</table>
+				</td>
+				</tr>
+		</table>
+		<br>
+		<br>
+		<table border="0" width="1200px" align="center" height="150px">
+				<tr>
+					<td rowspan="5" width="250px" align="center">
+						<img style="width:100px; height: 100px;" src="../image/market.png">
+					</td>
+					<td rowspan="5" width="10px">
+					</td>
+					<td colspan="2" height="15px" align="right">
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td width="450px">
+						상담가능시간
+					</td>
+					<td>
+						회사정보
+					</td>
+				</tr>
+				<tr>
+					<td>
+						평일 : 오전 09:00 ~ 오후 06:00
+					</td>
+					<td>
+						회사이름 : ezen  |  전화번호 : 010-0000-0000
+					</td>
+				</tr>
+				<tr>
+					<td>
+						점심시간 : 오후 12:00 ~ 오후 01:00
+					</td>
+					<td>
+						이메일 : asdf@naver.com  |  대한민국 전주시
+					</td>
+				</tr>
+				<tr>
+					<td>
+						주말 휴무
+					</td>
+					<td>
+						팩스 : 00-000-0000
+					</td>
+				</tr>
+			</table>
+	</body>
+</html>

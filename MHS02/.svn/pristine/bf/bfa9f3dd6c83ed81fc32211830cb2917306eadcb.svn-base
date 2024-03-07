@@ -1,0 +1,178 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ include file="../admininclude/head.jsp" %> 
+						<tr>
+							<td colspan="12"><a href="member.jsp"><h2><b>사용자 관리</b></h2></a><hr></td>
+						</tr>
+						<tr>
+							<td align="center" width="70px">회원번호</td>
+							<td align="center" width="110px">아이디</td>
+							<td align="center" width="110px">닉네임</td>
+							<td align="center" width="70px">이름</td>
+							<td align="center" width="40px">성별</td>
+							<td align="center" width="80px">생년월일</td>
+							<td align="center" width="70px">보유체질</td>
+							<td align="center" width="80px">가입일</td>
+							<td align="center" width="40px">블랙</td>
+							<td align="center" width="40px">탈퇴</td>
+							<td align="center" width="20px"></td>
+						</tr>
+						<tr>
+							<td colspan="12"><hr></td>
+						</tr>
+						<tr>
+							<td align="center">1</td>
+							<td align="center">hong</td>
+							<td align="center">홍홍길동</td>
+							<td align="center">홍길동</td>
+							<td align="center">남자</td>
+							<td align="center">231127</td>
+							<td align="center">태양인</td>
+							<td align="center">231127</td>
+							<td align="center">X</td>
+							<td align="center">X</td>
+							<td valign="middle">
+							<a href="memberpage.jsp">
+							<img src="../image/설정.png" style="width:20px; height: 20px"></a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="12"><hr></td>
+						</tr>
+						<tr>
+							<td align="center">1</td>
+							<td align="center">hong</td>
+							<td align="center">홍홍길동</td>
+							<td align="center">홍길동</td>
+							<td align="center">남자</td>
+							<td align="center">231127</td>
+							<td align="center">태양인</td>
+							<td align="center">231127</td>
+							<td align="center">X</td>
+							<td align="center">X</td>
+							<td valign="middle">
+							<a href="memberpage.jsp">
+							<img src="../image/설정.png" style="width:20px; height: 20px"></a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="12"><hr></td>
+						</tr>
+						<tr>
+							<td align="center">1</td>
+							<td align="center">hong</td>
+							<td align="center">홍홍길동</td>
+							<td align="center">홍길동</td>
+							<td align="center">남자</td>
+							<td align="center">231127</td>
+							<td align="center">태양인</td>
+							<td align="center">231127</td>
+							<td align="center">X</td>
+							<td align="center">X</td>
+							<td valign="middle">
+							<a href="memberpage.jsp">
+							<img src="../image/설정.png" style="width:20px; height: 20px"></a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="12"><hr></td>
+						</tr>
+						<tr>
+							<td align="center">1</td>
+							<td align="center">hong</td>
+							<td align="center">홍홍길동</td>
+							<td align="center">홍길동</td>
+							<td align="center">남자</td>
+							<td align="center">231127</td>
+							<td align="center">태양인</td>
+							<td align="center">231127</td>
+							<td align="center">X</td>
+							<td align="center">X</td>
+							<td valign="middle">
+							<a href="memberpage.jsp">
+							<img src="../image/설정.png" style="width:20px; height: 20px"></a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="12"><hr></td>
+						</tr>
+						<tr>
+							<td align="center">1</td>
+							<td align="center">hong</td>
+							<td align="center">홍홍길동</td>
+							<td align="center">홍길동</td>
+							<td align="center">남자</td>
+							<td align="center">231127</td>
+							<td align="center">태양인</td>
+							<td align="center">231127</td>
+							<td align="center">X</td>
+							<td align="center">X</td>
+							<td valign="middle">
+							<a href="memberpage.jsp">
+							<img src="../image/설정.png" style="width:20px; height: 20px"></a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="12"><hr></td>
+						</tr>
+						<tr>
+							<td align="center">1</td>
+							<td align="center">hong</td>
+							<td align="center">홍홍길동</td>
+							<td align="center">홍길동</td>
+							<td align="center">남자</td>
+							<td align="center">231127</td>
+							<td align="center">태양인</td>
+							<td align="center">231127</td>
+							<td align="center">X</td>
+							<td align="center">X</td>
+							<td valign="middle">
+							<a href="memberpage.jsp">
+							<img src="../image/설정.png" style="width:20px; height: 20px"></a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="12"><hr></td>
+						</tr>
+						<tr>
+							<td align="center">1</td>
+							<td align="center">hong</td>
+							<td align="center">홍홍길동</td>
+							<td align="center">홍길동</td>
+							<td align="center">남자</td>
+							<td align="center">231127</td>
+							<td align="center">태양인</td>
+							<td align="center">231127</td>
+							<td align="center">X</td>
+							<td align="center">X</td>
+							<td valign="middle">
+							<a href="memberpage.jsp">
+							<img src="../image/설정.png" style="width:20px; height: 20px"></a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="12"><hr></td>
+						</tr>
+						<tr>
+							<td align="center">1</td>
+							<td align="center">hong</td>
+							<td align="center">홍홍길동</td>
+							<td align="center">홍길동</td>
+							<td align="center">남자</td>
+							<td align="center">231127</td>
+							<td align="center">태양인</td>
+							<td align="center">231127</td>
+							<td align="center">X</td>
+							<td align="center">X</td>
+							<td valign="middle">
+							<a href="memberpage.jsp">
+							<img src="../image/설정.png" style="width:20px; height: 20px"></a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="12"><hr></td>
+						</tr>
+						<tr>
+							<td colspan="12" align="center">◀ 1 2 3 4 5 6 7 8 9 10 ▶</td>
+						</tr>
+<%@ include file="../admininclude/tail.jsp" %> 

@@ -1,0 +1,318 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ include file="../include/head.jsp" %> 
+<%
+String uno  = request.getParameter("uno");
+String con  = request.getParameter("con");
+String pw   = request.getParameter("pw");
+String nick = request.getParameter("nickname");
+
+UserDTO dto = new UserDTO();
+UserVO vo = dto.Read(uno);
+%>
+<script>
+
+	function retest() 
+	{
+		window.open('../constitution/cTest.jsp?uno=<%= loginVO.getUno() %>', '', 'width=2000, height=1000');
+		 $('#mycon').css('display', 'none');
+		 $('#dcon').css('display', 'none');
+		 $('#choicecon').css('display', '');
+	}
+	
+    function cancel() 
+    {
+        $('#dcon').css('display', 'none');
+        $('#test').css('display', 'none');
+        $('#mycon').css('display', 'block');
+        $('#retest').css('display', 'block');
+    }
+    
+    function changepw() 
+    {
+        $('#mypw').css('display', 'none');
+        $('#pwchange').css('display', '');
+        $('#pwcheck').css('display', '');
+    }
+    
+    function pwcancel() 
+    {
+        $('#pwchange').css('display', 'none');
+        $('#pwcheck').css('display', 'none');
+    }
+    
+    function changenick() 
+    {
+        $('#mynick').css('display', 'none');
+        $('#nickch').css('display', '');
+    }
+    
+    function nickcancel() 
+    {
+        $('#nickch').css('display', 'none');
+        $('#mynick').css('display', '');
+    }
+    
+	function setChildValue(con)
+	{	
+		//팝업창(자식창)에서 값 전달 받기
+		document.getElementById("constitution").value = con;
+	}
+	
+	function modifypw()
+	{
+		if( $("#pw").val() == "" ) //pw라는 이름의 pw의 값을 받아서 빈값이면 아래 출력
+		{	
+			alert("변경할 비밀번호를 입력하세요."); //변경할 비밀번호를 입력하세요.라는 경고문 띄움
+			$("#pw").focus();
+			return;
+		}
+		
+		if( $("#pwch").val() == "" )
+		{	
+			alert("확인할 비밀번호를 입력하세요.");
+			$("#pwch").focus();
+			return;
+		}
+		
+		if( $("#pw").val() != $("#pwch").val() )
+		{	
+			alert("비밀번호가 일치하지 않습니다.");
+			$("#pwch").focus();
+			return;
+		}
+		
+		pw = $("#pw").val();
+		
+		$.ajax({
+			type     : "post",
+			url      : "pwmodifyok.jsp?pw=" + pw +"&uno=" + <%= vo.getUno() %>,
+			dataType : "html"       ,
+			success : function(data)
+			{
+				// 통신이 성공적으로 이루어졌을때 이 함수를 타게된다.
+				data = data.trim();
+		        $('#pwchange').css('display', 'none');
+		        $('#pwcheck').css('display', 'none');
+		        $('#mypw').css('display', '');
+			}
+		});
+		return;
+	}
+	function checknick()
+	{
+		nick = $("#nick").val();
+		
+		$.ajax({
+			type     : "post",
+			url      : "../login/nickcheck.jsp?nick=" + nick +"&uno=" + <%= vo.getUno() %>,
+			dataType : "html"       ,
+			success : function(data)
+			{
+				// 통신이 성공적으로 이루어졌을때 이 함수를 타게된다.
+				data = data.trim();
+				if( data == "003" )
+				{
+					$('#nickch').css('display', 'none');
+			        $('#mynick').css('display', '');
+					alert("중복된 닉네임입니다.");
+					var input = document.getElementById("nick");
+				    input.value = "";
+					return;
+				}
+			}
+		});
+	}
+	
+	function modifynick()
+	{
+		if( $("#nick").val() == "" ) 
+		{	
+			alert("변경할 닉네임을 입력하세요."); 
+			$("#nick").focus();
+			return;
+		}
+		
+		nick = $("#nick").val();
+		
+		$.ajax({
+			type     : "post",
+			url      : "nickmodifyok.jsp?nick=" + nick + "&uno=" + <%= vo.getUno() %>,
+			dataType : "html"       ,
+			success : function(data)
+			{
+				// 통신이 성공적으로 이루어졌을때 이 함수를 타게된다.
+				data = data.trim();
+				$('#nickch').css('display', 'none');
+		        $('#mynick').css('display', '');
+		        location.href="modify.jsp?uno=" + <%= uno %>;
+			}
+		});
+		return;
+	}
+	
+	function mypage()
+	{
+		location.href="myPage.jsp?uno=" + <%= uno %>;		
+	}
+	
+	function modifycon()
+	{
+		con = $("#constitution").val();
+		
+		$.ajax({
+			type     : "post",
+			url      : "modifycon.jsp?con=" + con +"&uno=" + <%= vo.getUno() %>,
+			dataType : "html"       ,
+			success : function(data)
+			{
+				// 통신이 성공적으로 이루어졌을때 이 함수를 타게된다.
+				data = data.trim();
+		        location.href="modify.jsp?uno=" + <%= uno %>;
+			}
+		});
+		return;
+		
+	}
+</script>
+<style>
+
+	input[type=button]
+	{
+		
+		cursor:pointer;
+		background-color:lightgray;
+		border:0;
+		border-radius: 5px;
+	
+	}
+</style>
+		<table border="0" width="1200px" align="center" style="margin-top: 10px">
+			<tr>
+				<td rowspan="12" width="300px"></td>
+				<td colspan="3" align="left"> 
+					<h2>회원정보수정</h2>
+					<hr>
+				</td>
+				<td rowspan="11" width="100px"></td>
+			</tr>
+			<tr>
+				<td width="120px" height="50px">아이디*</td>
+				<td><%= vo.getId() %></td>
+				<td></td>
+			</tr>
+			<tr style="display:;" id="mypw">
+				<td height="50px">비밀번호*</td>
+				<td id="userpw">********</td>
+				<td width="400px">
+					<input type="button" onclick="javascript:changepw();" value="비밀번호 수정" style="height:30px; font-size:15px">
+				</td>
+			</tr>
+			<tr style="display:none;" id="pwchange">
+				<td height="50px">변경 비밀번호*</td>
+				<td>
+					<input type="password" id="pw" style="width:200px; height:20px">
+				</td>
+				<td width="400px"></td>
+			</tr>
+			<tr style="display:none;" id="pwcheck">
+				<td height="50px">비밀번호 확인*</td>
+				<td>
+					<input type="password" id="pwch" style="width:200px; height:20px">
+				</td>
+				<td>
+					<input type="button" value="비밀번호 수정" onclick="modifypw();" style="height:30px; font-size:15px">
+					<input type="button" value="취소" style="height:30px; font-size:15px" onclick="javascript:pwcancel();">
+				</td>
+			</tr>
+			<tr>
+				<td height="50px">이름*</td>
+				<td><%= vo.getName() %></td>
+				<td></td>
+			</tr>
+			<tr id="mynick">
+				<td height="50px">닉네임*</td>
+				<td id="usernick"><%= vo.getNickname() %></td>
+				<td>
+					<input type="button" value="닉네임 수정" onclick="changenick();" style="height:30px; font-size:15px">
+				</td>
+			</tr>
+			<tr id="nickch" style="display: none">
+				<td height="50px">닉네임*</td>
+				<td>
+					<input type="text" id="nick" placeholder="새로운 닉네임을 입력해주세요" onkeyup="checknick();" style="width:250px; height:25px">
+				</td>
+				<td>
+					<input type="button" value="중복확인" onclick="modifynick();" style="height:30px; font-size:15px">
+					<input type="button" value="취소" style="height:30px; font-size:15px" onclick="javascript:nickcancel();">
+				</td>
+			</tr>
+			<tr>
+				<td height="50px">성별*</td>
+				<td><%= vo.getGender() %></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td height="50px">생년월일*</td>
+				<td><%= vo.getBirth() %></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td height="50px">나의 체질*</td>
+				<td>
+					<%
+					if( !vo.getCon().equals("나의 체질 검사하기") )
+					{
+						%>
+						<div name="mycon" id="mycon"><%= vo.getCon() %></div>
+						<%
+					}
+					else
+					{
+					%>
+					<div name="dcon" id="dcon">
+						<select name="constitution" id="constitution" style="width: 150px; height: 30px ">
+							<option value="나의 체질 검사하기">선택</option>	
+							<option value="태양인">태양인</option>	
+							<option value="태음인">태음인</option>	
+							<option value="소양인">소양인</option>	
+							<option value="소음인">소음인</option>
+						</select>
+					</div>
+					<%
+					}
+					%>
+					<div name="choicecon" id="choicecon" style="display:none;">
+						<select name="constitution" id="constitution" style="width: 150px; height: 30px ">
+							<option value="나의 체질 검사하기">선택</option>	
+							<option value="태양인">태양인</option>	
+							<option value="태음인">태음인</option>	
+							<option value="소양인">소양인</option>	
+							<option value="소음인">소음인</option>
+						</select>
+					</div>
+				</td>
+				<td>
+					<div name="retest" id="retest">
+					<a href="javascript:retest();">
+					<input type="button" style="height:30px; font-size:15px" value="나의 체질 재검사하기"></a>
+					</div> 
+				</td>
+			</tr>
+			<tr>
+				<td height="50px">이메일*</td>
+				<td><%= vo.getEmail() %></td>
+				<td></td>
+			</tr>
+			<tr height="50px">
+				<td colspan="3"></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center">
+						<input type="button" value="수정완료" onclick="modifycon();" style="width:100px; height:30px; font-size:15px; background-color:#4dd5b0;">
+					<a href="myPage.jsp?uno=<%= uno %>">
+						<input type="button" value="취소" style="width:100px; height:30px; font-size:15px"></a>
+				</td>
+			</tr>
+		</table>
+<%@ include file="../include/tail.jsp" %> 

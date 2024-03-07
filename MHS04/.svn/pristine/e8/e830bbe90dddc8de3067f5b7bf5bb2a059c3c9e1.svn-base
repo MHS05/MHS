@@ -1,0 +1,18 @@
+package mhs.test;
+
+public class Test 
+{
+	public static void main(String[] args) 
+	{
+		
+		String valList="1,2,3,4,5";
+		
+		String[] delNo = valList.split(",");
+		
+		for(String v : delNo)
+		{
+			System.out.println(v);
+		}
+	}
+
+}

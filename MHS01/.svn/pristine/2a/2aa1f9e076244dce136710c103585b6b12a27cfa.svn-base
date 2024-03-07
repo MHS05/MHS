@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>나만의 건강 쇼핑몰</title>
+	</head>
+	<body>
+	<style>
+		
+		.button
+		{
+			background-color: lightgray;
+			text-align: center;
+			vertical-align : middle;
+			padding-top : 4px;
+			height: 25px;
+			width : 80px;
+			float:right;
+			border-radius: 15px;
+		}
+	
+		.nav
+		{
+			background-color: #4dd5b0;
+
+		}
+		.nav div
+		{
+			float:left; 
+			margin-left: 60px;
+
+		}
+		a, .nav div a, .month 
+		{
+			text-decoration: none;
+			color: black;
+		}
+		
+		
+	</style>
+		<form>
+			<table border="0" width="1200px" align="center">
+				<tr>
+					<td rowspan="2" width="250px">
+						<a href="index.html"><img style="width:250px; height: 200px;" src="../image/logo.png"></a>
+					</td>
+					<td colspan="4" height="50px" align="right">
+						<a href="join.html"><div class="button">회원가입</div></a>
+						<div class="button" style="background-color: white; width:10px;"></div>
+						<a href="login.html"><div class="button">로그인</div></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="nav">
+						<div>
+							<a href="category.html"><h1>카테고리</h1></a>
+						</div> 
+						<div>
+							<a href="community.html"><h1>커뮤니티</h1></a>
+						</div> 
+						<div>
+							<a href="notice.html"><h1>공지사항</h1></a>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<table border="0" width="1200px" align="center">
+			<tr>
+				<td rowspan="11" width="300px"><td>
+			</tr>
+			<tr>
+				<td colspan="3"><h2>회원정보수정</h2><hr></td>
+			</tr>
+			<tr>
+				<td style="width:200px"><h3>아이디*</h3></td>
+				<td style="width:200px">hong</td>
+			</tr>
+			<tr>
+				<td><h3>비밀번호*</h3></td>
+				<td>****</td>
+				<td><input type="button" value="비밀번호 수정" style="width:150px; height:50px";></td>
+			</tr>
+			<tr>
+				<td><h3>이름*</h3></td>
+				<td>홍길동</td>
+			</tr>
+			<tr>
+				<td><h3>닉네임*</h3></td>
+				<td>hgd</td>
+				<td><input type="button" value="닉네임 수정" style="width:150px; height:50px";></td>
+			</tr>
+			<tr>
+				<td><h3>성별*</h3></td>
+				<td>남자</td>
+			</tr>
+			<tr>
+				<td><h3>생년월일*</h3></td>
+				<td>2023년 11월 28일</td>
+			</tr>
+			<tr>
+				<td><h3>나의체질</h3></td>
+				<td>태양인</td>
+				<td><input type="button" value="체질 재조사 하기" style="width:150px; height:50px";></td>
+			</tr>
+			<tr>
+				<td colspan="3" style="height:50px"><td>
+			</tr>
+			<tr>
+				<td colspan="2" align="right">
+					<input type="button" value="수정완료" style="width:100px; height:50px;";>&emsp;&emsp;
+					<input type="button" value="취소" style="width:100px; height:50px";>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

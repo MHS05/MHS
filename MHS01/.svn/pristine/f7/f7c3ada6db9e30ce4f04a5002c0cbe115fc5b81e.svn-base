@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>16~22체질검사</title>
+	</head>
+	<body>
+		<style>
+			
+		</style>
+		<form>
+			<table border="0" width="1200px" align="center">
+				<tr>
+					<td rowspan="20" width="20%" valign="top"><h2><img src="write.jpg" style="width:40px;">체질검사</h2></td>
+					<td height="60px"></td>
+				</tr>
+				<tr>
+					<td align="center"><img src="down.jpg"></td>
+				</tr>
+				<tr>
+					<td height="50px" valign="bottom">19번~22번은 그렇다, 보통이다, 아니다에서 골라서 표기해 주십시오.</td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" align="center">
+							<tr>
+								<td align="center" width="800px" style="background-color:lightgray;">19번</td>
+								<td align="center" width="100px" style="background-color:lightgray;">그렇다</td>
+								<td align="center" width="100px" style="background-color:lightgray;">보통이다</td>
+								<td align="center" width="100px" style="background-color:lightgray;">아니다</td>
+							</tr>
+							<tr>
+								<td>1. 과묵하고 신중한 편이다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>2. 밖의 일보다 집안일이나 개인적인 일을 더 중요시한다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>3. 자기의 의견을 끝까지 관철시키는 편이며 고집이 세다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>4. 인내심이 많다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>5. 평소 점잖은 편이나 음흉한 면도 있다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>6. 욕심이 많다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>7. 노력형이다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align="center"><img src="down.jpg"></td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" align="center">
+							<tr>
+								<td align="center" width="800px" style="background-color:lightgray;">20번</td>
+								<td align="center" width="100px" style="background-color:lightgray;">그렇다</td>
+								<td align="center" width="100px" style="background-color:lightgray;">보통이다</td>
+								<td align="center" width="100px" style="background-color:lightgray;">아니다</td>
+							</tr>
+							<tr>
+								<td>1. 꼼꼼한 편이다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>2. 개인주의 내지 이기주의가 강한 편이다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>3. 몸을 움직이는 일보다 앉아서 하는 일이 마음에 든다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>4. 남성적인 면에 비해 여성적인 면이 많은 것 같다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>5. 내성적이고 수줍음이 많아 많은 사람들 앞에 나서기 어렵다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>6. 한번 감정이 상하면 좀처럼 잘 풀리지 않는다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>7. 남이 자기일에 간섭하는 것을 아주 싫어한다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align="center"><img src="down.jpg"></td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" align="center">
+							<tr>
+								<td align="center" width="800px" style="background-color:lightgray;">21번</td>
+								<td align="center" width="100px" style="background-color:lightgray;">그렇다</td>
+								<td align="center" width="100px" style="background-color:lightgray;">보통이다</td>
+								<td align="center" width="100px" style="background-color:lightgray;">아니다</td>
+							</tr>
+							<tr>
+								<td>1. 솔직담백하다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>2. 시작은 잘하나 마무리가 부족하다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>3. 외부일에 치중하여 나 자신과 가정에 대해서는 소홀한 편이다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>4. 봉사정신이 많다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>5. 사무에 밝고 일처리가 신속하다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>6. 남의 잘못을 따지기 좋아한다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>7. 성격이 급하며 싫증을 잘 느끼고 체념을 잘 한다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align="center"><img src="down.jpg"></td>
+				</tr>
+				<tr>
+					<td>
+						<table border="0" align="center">
+							<tr>
+								<td align="center" width="800px" style="background-color:lightgray;">22번</td>
+								<td align="center" width="100px" style="background-color:lightgray;">그렇다</td>
+								<td align="center" width="100px" style="background-color:lightgray;">보통이다</td>
+								<td align="center" width="100px" style="background-color:lightgray;">아니다</td>
+							</tr>
+							<tr>
+								<td>1. 적극적이고 모든 일에 거침없이 행동한다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>2. 여성적이기보다 남성적인 면이 많다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>3. 창의력이 있다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>4. 과단성이 있다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>5. 일이 뜻대로 되지 않으면 참기 힘들 정도로 화가 난다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>6. 자신이 한 일에 대해 후회하는 일이 거의 없다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+							<tr>
+								<td>7. 영웅심 및 자존심이 강하다.</td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+								<td align="center"><input type="radio"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" height="50px" valign="bottom">
+						<input type="button" value="결과보기" id="result">&nbsp
+						<input type="button" value="다시입력" id="reset">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

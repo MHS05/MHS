@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>나만의 건강 쇼핑몰</title>
+	</head>
+	<body>
+	<style>
+		.button
+		{
+			background-color: lightgray;
+			text-align: center;
+			vertical-align : middle;
+			padding-top : 4px;
+			height: 25px;
+			width : 80px;
+			float:right;
+			border-radius: 15px;
+		}
+	
+		.nav
+		{
+			background-color: #4dd5b0;
+
+		}
+		.nav div
+		{
+			float:left; 
+			margin-left: 60px;
+
+		}
+		a, .nav div a, .month 
+		{
+			text-decoration: none;
+			color: black;
+		}
+		
+	</style>
+		<form>
+			<table border="0" width="1200px" align="center">
+				<tr>
+					<td rowspan="2" width="250px">
+						<a href="index.html"><img style="width:250px; height: 200px;" src="logo.png"></a>
+					</td>
+					<td colspan="4" height="50px" align="right">
+						<a href="join.html"><div class="button">회원가입</div></a>
+						<div class="button" style="background-color: white; width:10px;"></div>
+						<a href="login.html"><div class="button">로그인</div></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="nav">
+						<div>
+							<a href="category.html"><h1>카테고리</h1></a>
+						</div> 
+						<div>
+							<a href="../community/communitylist.html"><h1><u>커뮤니티</u></h1></a>
+						</div> 
+						<div>
+							<a href="../notice/noticelist.html"><h1>공지사항</h1></a>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<form method="get" action="communitywrite.html">
+		<table border="0" align="center" width="1200px">
+			<tr>
+				<td rowspan="26" width="20%" valign="top">
+					<table border="0" align="left" width="200px" height="50px">
+						<tr>
+							<td>
+							<div><a href="category.html"><h1><u>커뮤니티</u></h1></a></div> 
+							</td>
+						</tr>
+						<tr height="50px">
+							<td style="font-size: 20px;"><a href="communitylist.html" style="text-decoration:underline;"><b>자유게시판</b></a></td>
+						</tr>
+						<tr height="50px">
+							<td style="font-size: 20px;"><a href="taiyanglist.html"><b>태양인게시판</b></a></td>
+						</tr>
+						<tr height="50px">
+							<td style="font-size: 20px;"><a href="taiumlist.html"><b>태음인게시판</b></td>
+						</tr>
+						<tr height="50px">
+							<td style="font-size: 20px;"><a href="soyanglist.html"><b>소양인게시판</b></td>
+						</tr>
+						<tr height="50px">
+							<td style="font-size: 20px;"><a href="soemlist.html"><b>소음인게시판</b></td>
+						</tr>
+					</table>
+				</td>
+				<td height="50px" colspan="4"><h2>자유게시판</h2></td>
+				<td align="right"><input type="submit" value="글쓰기"></td>
+			</tr>
+			<tr>
+				<td colspan="5"><hr></td>
+			<tr>
+			<tr>
+				<td align="center" width="100px">번호</td>
+				<td align="center">제목</td>
+				<td align="center" width="75px">글쓴이</td>
+				<td align="center" width="100px">작성일</td>
+				<td align="center" width="50px">조회수</td>
+			</tr>
+			<tr>
+				<td colspan="5"><hr></td>
+			</tr>
+			<tr>
+				<td align="center">1</td>
+				<td align="center"><a href="communityview.html">1번째 제목입니다.</a></td>
+				<td align="center">홍길동</td>
+				<td align="center">2023.11.30</td>
+				<td align="center">10</td>
+			</tr>
+			<tr>
+				<td colspan="5"><hr></td>
+			</tr>
+			<tr>
+				<td align="center">2</td>
+				<td align="center"><a href="communityview.html">2번째 제목입니다.</a></td>
+				<td align="center">홍길동</td>
+				<td align="center">2023.11.30</td>
+				<td align="center">10</td>
+			</tr>
+			<tr>
+				<td colspan="5"><hr></td>
+			</tr>
+			<tr>
+				<td align="center">3</td>
+				<td align="center"><a href="communityview.html">3번째 제목입니다.</a></td>
+				<td align="center">홍길동</td>
+				<td align="center">2023.11.30</td>
+				<td align="center">10</td>
+			</tr>
+			<tr>
+				<td colspan="5"><hr></td>
+			</tr>
+			<tr>
+				<td align="center">4</td>
+				<td align="center"><a href="communityview.html">4번째 제목입니다.</a></td>
+				<td align="center">홍길동</td>
+				<td align="center">2023.11.30</td>
+				<td align="center">10</td>
+			</tr>
+			<tr>
+				<td colspan="5"><hr></td>
+			</tr>
+			<tr>
+				<td align="center">5</td>
+				<td align="center"><a href="communityview.html">5번째 제목입니다.</a></td>
+				<td align="center">홍길동</td>
+				<td align="center">2023.11.30</td>
+				<td align="center">10</td>
+			</tr>
+			<tr>
+				<td colspan="5"><hr></td>
+			</tr>
+			<tr>
+				<td align="center">6</td>
+				<td align="center"><a href="communityview.html">6번째 제목입니다.</a></td>
+				<td align="center">홍길동</td>
+				<td align="center">2023.11.30</td>
+				<td align="center">10</td>
+			</tr>
+			<tr>
+				<td colspan="5"><hr></td>
+			</tr>
+			<tr>
+				<td align="center">7</td>
+				<td align="center"><a href="communityview.html">7번째 제목입니다.</a></td>
+				<td align="center">홍길동</td>
+				<td align="center">2023.11.30</td>
+				<td align="center">10</td>
+			</tr>
+			<tr>
+				<td colspan="5"><hr></td>
+			</tr>
+			<tr>
+				<td align="center">8</td>
+				<td align="center"><a href="communityview.html">8번째 제목입니다.</a></td>
+				<td align="center">홍길동</td>
+				<td align="center">2023.11.30</td>
+				<td align="center">10</td>
+			</tr>
+			<tr>
+				<td colspan="5"><hr></td>
+			</tr>
+			<tr>
+				<td align="center">9</td>
+				<td align="center"><a href="communityview.html">9번째 제목입니다.</a></td>
+				<td align="center">홍길동</td>
+				<td align="center">2023.11.30</td>
+				<td align="center">10</td>
+			</tr>
+			<tr>
+				<td colspan="5"><hr></td>
+			</tr>
+			<tr>
+				<td align="center">10</td>
+				<td align="center"><a href="communityview.html">10번째 제목입니다.</a></td>
+				<td align="center">홍길동</td>
+				<td align="center">2023.11.30</td>
+				<td align="center">10</td>
+			</tr>
+			<tr>
+				<td colspan="5"><hr></td>
+			</tr>
+			<tr>
+				<td colspan="5" align="center">◀ 1 2 3 4 5 6 7 8 9 10 ▶</td>
+			</tr>
+		</table>
+		</form>
+		
+	</body>
+
+		<br>
+		<br>
+		<table border="0" width="1200px" align="center" height="150px">
+				<tr>
+					<td rowspan="5" width="250px" align="center">
+						<img style="width:100px; height: 100px;" src="market.png">
+					</td>
+					<td rowspan="5" width="10px">
+					</td>
+					<td colspan="2" height="15px" align="right">
+						<hr>
+					</td>
+				</tr>
+				<tr>
+					<td width="450px">
+						상담가능시간
+					</td>
+					<td>
+						회사정보
+					</td>
+				</tr>
+				<tr>
+					<td>
+						평일 : 오전 09:00 ~ 오후 06:00
+					</td>
+					<td>
+						회사이름 : ezen  |  전화번호 : 010-0000-0000
+					</td>
+				</tr>
+				<tr>
+					<td>
+						점심시간 : 오후 12:00 ~ 오후 01:00
+					</td>
+					<td>
+						이메일 : asdf@naver.com  |  대한민국 전주시
+					</td>
+				</tr>
+				<tr>
+					<td>
+						주말 휴무
+					</td>
+					<td>
+						팩스 : 00-000-0000
+					</td>
+				</tr>
+			</table>
+	</body>
+</html>

@@ -1,0 +1,156 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<%@ include file="../include/head.jsp" %> 
+<script>
+	window.onload = function() 
+	{
+		document.joinform.id.focus();
+	}
+	
+	function check() 
+	{
+		if( document.joinform.id.value == "" )
+		{
+			alert("아이디를 입력하세요.")
+			document.joinform.id.focus();
+			return;
+		}
+		
+		if( document.joinform.pw.value == "" )
+		{
+			alert("비밀번호를 입력하세요.")
+			document.joinform.pw.focus();
+			return;
+		}
+		
+		if( document.joinform.pw.value != document.joinform.pwcheck.value )
+		{
+			alert("비밀번호를 확인하세요.")
+			document.joinform.pw.focus();
+			return;
+		}
+		
+		if( document.joinform.name.value == "" )
+		{
+			alert("이름을 입력하세요.")
+			document.joinform.name.focus();
+			return;
+		}
+		
+		if( document.joinform.nickName.value == "" )
+		{
+			alert("닉네임을 입력하세요.")
+			document.joinform.nickName.focus();
+			return;
+		}
+		
+		if( document.joinform.birth.value == "" )
+		{
+			alert("생년월일을 입력하세요.")
+			document.joinform.birth.focus();
+			return;
+		}
+		
+		if( document.joinform.email.value == "" )
+		{
+			alert("이메일을 입력하세요.")
+			document.joinform.email.focus();
+			return;
+		}
+		
+		dojoin();
+		
+	}
+	
+	function dojoin() 
+	{
+		document.location.href = "joinok.jsp";	
+	}
+	
+	function setChildValue(con) 
+	{
+		document.getElementById("constitution").value = con;
+	}
+	
+</script>
+			<form method="post" name="joinform" id="joinform" action="joinok.jsp">
+				<table class="join" border="0" width="1200px" align="center" style="margin-top: 10px">
+					<tr>
+						<td rowspan="11" width="300px">
+						<td colspan="3" align="left"> 
+							<h3>회원가입</h3>
+							<hr>
+						</td>
+						<td rowspan="11" width="100px"></td>
+					</tr>
+					<tr>
+						<td width="150px">아이디(*)</td>
+						<td width="400px"><input type="text" name="id" id="id" placeholder="아이디를 입력해주세요" style="width: 95%; height: 30px"></td>
+						<td><input type="button" value="중복확인" onclick="javascript:check();"></td>
+					</tr>
+					<tr>
+						<td width="120px">비밀번호(*)</td>
+						<td><input type="password" name="pw" id="pw" placeholder="비밀번호를 입력해주세요" style="width: 95%; height: 30px"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td width="120px">비밀번호 확인(*)</td>
+						<td><input type="password" name="pwcheck" id="pwcheck" placeholder="비밀번호를 한번 더 입력해주세요" style="width: 95%; height: 30px"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td width="120px">이름(*)</td>
+						<td><input type="text" name="name" id="name" placeholder="이름을 입력해주세요" style="width: 95%; height: 30px"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td width="120px">닉네임(*)</td>
+						<td><input type="text" name="nickName" id="nickName" placeholder="닉네임을 입력해주세요" style="width: 95%; height: 30px"></td>
+						<td><input type="button" value="중복확인" onclick="javascript:check();"></td>
+					</tr>
+					<tr>
+						<td width="120px">성별(*)</td>
+						<td>
+							<input type="radio" name="gender" id="gender" value="M" checked>남자
+							<input type="radio" name="gender" id="gender" value="W">여자
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td width="120px">생년월일(*)</td>
+						<td><input type="text" name="birth" id="birth" placeholder="예)940812" style="width: 95%; height: 30px"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td width="120px">이메일(*)</td>
+						<td><input type="text" name="email" id="email" placeholder="이메일을 입력해주세요" style="width: 95%; height: 30px"></td>
+						<td><input type="button" value="이메일 인증"></td>
+					</tr>
+					<tr>
+						<td width="120px">나의 체질</td>
+						<td>
+							<select name="constitution" id="constitution" style="width: 150px; height: 30px ">
+								<option value="X">선택</option>	
+								<option value="A">태양인</option>	
+								<option value="B">태음인</option>	
+								<option value="C">소양인</option>	
+								<option value="D">소음인</option>
+							</select>
+							&nbsp;
+							<a href="../constitution/cTest.jsp" onClick="window.open(this.href, '', 'width=2000, height=1000'); return false;"><input type="button" value="나의 체질 검사하기"></a>	
+						</td>
+						<td></td>
+					</tr>
+					<tr height="50px">
+						<td></td>
+						<td colspan="2" valign="top"><font size="3">※로그인 후에도 체질검사 가능</font></td>
+					</tr>
+					<tr>
+						<td colspan="5" align="center" style="color: white;">
+							<span onclick="javascript:check();">회원가입</span>
+							<a href="../main/index.jsp"><span style="background-color: lightgray" onclick="JoinCancle();">취소</span></a>
+						</td>
+					</tr>
+				</table>
+			</form>
+<%@ include file="../include/tail.jsp" %> 

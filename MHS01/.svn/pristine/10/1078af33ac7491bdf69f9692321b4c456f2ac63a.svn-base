@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>태양인</title>
+	</head>
+	<body>
+		<table></table>
+		<td><img src="write.jpg" style="width:40px;">체질검사 결과</td>
+		<td>태양인</td>
+		<td></td>
+		<td><a href=".html"><input type="button" value="나를 위한 음식 더 알아보기 >"></a></td>
+	</body>
+</html>
